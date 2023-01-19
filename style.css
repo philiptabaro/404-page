@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {    
+    background: rgb(255, 255, 255);    
+}
+
+header p {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin: 50px 0 0 100px;
+}
+
+.main-section {
+    width: 80%;
+    min-height: 100vh;   
+    margin: auto auto;  
+    background-color: none; 
+    display: flex;
+    align-items: center;  
+    padding-bottom: 2.5rem;
+    
+    
+}
+
+.img {        
+    background-color: none;    
+    width: 50%;       
+    margin: 5rem;   
+}
+
+.text {    
+    padding: 5rem;
+    background-color: none;
+}
+
+@media screen and (max-width: 1350px){
+    .main-section {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .img {
+       min-width: 40rem;
+    }
+}
+
+.news-text {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 6.4rem;
+    margin-bottom: 5rem;
+}
+
+.text-page {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+}
+
+.button {
+    height: 6.8rem;
+    width: 21.6rem;
+    background: #333333;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border: none;
+    transition: 300ms ease-in-out;  
+}
+
+.button:hover {
+    background: #181818;
+} 
+
+.button-div {
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 670px){
+    .news-text {
+        font-size: 4rem;
+    }
+    .text-page {
+        font-size: 1.8rem;
+    }
+    .main-section {
+        flex-direction: column;
+        justify-content:center;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .img {
+        min-width: 25rem;
+     }
+    .header p {
+        margin: 20px 0 0 50px;
+    }
+}
+
+.footer {   
+    height: 2.5rem;
+    width: 100vw; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #BDBDBD;  
+    text-align: center;  
+    
+}
